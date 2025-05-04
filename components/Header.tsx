@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <DarkModeToggle />
+    </div>
+  );
+};
 
-export default Header
+export default Header;
