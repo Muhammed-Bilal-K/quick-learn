@@ -1,4 +1,4 @@
-# quick-basket
+# quick-learn
 
 ## Getting Started
 
