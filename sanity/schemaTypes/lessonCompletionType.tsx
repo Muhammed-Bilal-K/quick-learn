@@ -33,6 +33,7 @@ export const lessonCompletionType = defineType({
       title: "Course",
       type: "reference",
       to: [{ type: "course" }],
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "completedAt",
