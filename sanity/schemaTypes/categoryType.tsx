@@ -36,7 +36,7 @@ export const categoryType = defineType({
       name: "color",
       title: "Color",
       type: "string",
-      description: "Color code for the description (e.g., #FF0000)",
+      description: "Color code for the category (e.g., #FF0000)",
     }),
   ],
 });
