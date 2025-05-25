@@ -1,5 +1,6 @@
 "use client";
 
+import { createStripeCheckout } from "@/actions/createStripeCheckout";
 import { useUser } from "@clerk/nextjs";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
@@ -23,8 +24,12 @@ function EnrollButton({
         const userId = user?.id;
         if (!userId) return;
 
-      
+        const { url } = await createStripeCheckout(courseId, userId);
+        if (url) {
+          router.push(url);
+        }
       } catch (error) {
+        console.error(error);
         throw new Error("Failed to create checkout session");
       }
     });
