@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ReactPlayer = dynamic<any>(
   () => import("react-player"),
   { ssr: false }
