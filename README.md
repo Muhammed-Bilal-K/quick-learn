@@ -35,6 +35,5 @@ STRIPE_WEBHOOK_SECRET=your-webhook-secret
 # Sanity
 NEXT_PUBLIC_SANITY_PROJECT_ID=your-sanity-project-id
 NEXT_PUBLIC_SANITY_DATASET=production
-
 # App
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
